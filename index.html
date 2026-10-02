@@ -29,7 +29,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <header><div class="nav"><div class="brand"><span>Reelora</span> · Alleryon Labs</div><div class="langs"><button id="ptBtn" class="active" onclick="setLang('pt')">PT-BR</button><button id="enBtn" onclick="setLang('en')">EN</button><button id="esBtn" onclick="setLang('es')">ES</button></div></div></header>
 <main>
 <div id="pt">
-<div class="hero"><h1>Política de Privacidade do Reelora</h1><p class="meta">Vigência: 28 de setembro de 2026 · Última atualização: 28 de setembro de 2026</p><p class="note">Esta política descreve o funcionamento atual do Reelora e os serviços de terceiros usados pelo aplicativo.</p></div>
+<div class="hero"><h1>Política de Privacidade do Reelora</h1><p class="meta">Vigência: 28 de setembro de 2026 · Última atualização: 2 de outubro de 2026</p><p class="note">Esta política descreve o funcionamento atual do Reelora e os serviços de terceiros usados pelo aplicativo.</p></div>
 <section><h2>1. Quem somos</h2>
 <p>O Reelora é um aplicativo para Android publicado sob o nome de desenvolvedor <strong>Alleryon Labs</strong>. Ele permite salvar no seu aparelho vídeos, áudios e imagens a partir de links que você escolhe.</p>
 <p>Esta política explica quais informações o Reelora usa, onde elas ficam, quando saem do seu aparelho e quais escolhas você tem.</p>
@@ -50,6 +50,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Links:</strong> o endereço do conteúdo que você quer salvar, copiado ou compartilhado com o Reelora.</li>
 <li><strong>Login no Instagram (opcional):</strong> realizado na página do Instagram dentro do app.</li>
 <li><strong>Escolhas no app:</strong> preferências como qualidade, idioma, tema, modo “Só áudio”, playlists e nomes dados às faixas.</li>
+<li><strong>Mídia escolhida por você:</strong> fotos, vídeos ou áudios selecionados para biblioteca, edição, criação de figurinhas ou outras ferramentas. Quando aplicável, o Reelora usa os seletores do Android para permitir a escolha de itens específicos.</li>
 </ul>
 </section>
 <section><h2>4. Área de transferência e links compartilhados</h2>
@@ -83,6 +84,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Sessão do Instagram:</strong> quando ativada, permanece no componente de navegação do app no aparelho.</li>
 <li><strong>Cache e temporários:</strong> dados intermediários usados durante downloads e edições.</li>
 <li><strong>Consentimento e anúncios:</strong> informações locais mantidas pelas bibliotecas do Google.</li>
+<li><strong>Pacotes de figurinhas:</strong> arquivos preparados podem permanecer na área privada do Reelora para permitir o uso do pacote.</li>
 </ul>
 <p>Esses dados ficam na área privada do Reelora e são removidos com a desinstalação, exceto arquivos salvos na biblioteca de mídia do Android.</p>
 </section>
@@ -90,7 +92,18 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <p>Vídeos, áudios e imagens são gravados na biblioteca de mídia do Android, incluindo as pastas <code>Movies/Reelora</code>, <code>Music/Reelora</code> e <code>Pictures/Reelora</code>. Os nomes podem conter o nome público do criador informado pela plataforma.</p>
 <p>Os arquivos continuam no aparelho mesmo depois de limpar o histórico ou desinstalar o Reelora, até que você os exclua. O Reelora não envia automaticamente esses arquivos para servidores; ao usar <strong>Compartilhar</strong>, o Android apresenta os destinos disponíveis e você escolhe para onde enviá-los.</p>
 </section>
-<section><h2>9. Login opcional no Instagram</h2>
+<section><h2>9. Biblioteca do aparelho e ferramentas de edição</h2>
+<p>Com sua autorização ou após uma escolha explícita de mídia, o Reelora pode acessar vídeos existentes no aparelho para exibi-los na Biblioteca e permitir reprodução, gerenciamento e uso nas ferramentas de edição. O acesso depende das permissões e opções oferecidas pela versão do Android, inclusive acesso limitado quando disponível.</p>
+<p>As ferramentas de edição podem recortar vídeos, aplicar filtros e ajustes, adicionar música, criar GIFs e extrair áudio. Essas operações são realizadas localmente no aparelho. Os resultados são salvos como novos arquivos nas áreas de mídia do Reelora; o uso dessas ferramentas, por si só, não envia a mídia para servidores da Alleryon Labs.</p>
+<p>Quando você escolhe um áudio do aparelho como música de fundo, a seleção pode ser feita pelo seletor de conteúdo do Android. O Reelora acessa somente o item escolhido para executar a edição solicitada.</p>
+</section>
+<section><h2>10. Criação de figurinhas e remoção de fundo</h2>
+<p>O Reelora permite criar pacotes de figurinhas estáticas ou animadas a partir de fotos, vídeos, texto e outros elementos escolhidos por você. Fotos e vídeos podem ser selecionados pelos seletores de mídia do Android. Para essa função, o Reelora não precisa fazer leitura ampla de todas as fotos existentes no aparelho.</p>
+<p>Recorte manual, texto, molduras, contornos, emojis e preparação das figurinhas são processados localmente. Os arquivos preparados para os pacotes podem permanecer na área privada do aplicativo e, em condições normais do Android, são removidos quando os dados do Reelora são apagados ou o aplicativo é desinstalado.</p>
+<p>O recurso opcional <strong>Tirar fundo</strong> usa o <strong>Google ML Kit Subject Segmentation</strong>. A segmentação da imagem é realizada no dispositivo; a imagem usada para criar a figurinha não é enviada ao Google para executar a segmentação. Componentes do Google ML Kit/Google Play Services podem, contudo, transmitir ao Google dados técnicos e de diagnóstico relacionados ao funcionamento do serviço, como informações técnicas do dispositivo e do aplicativo, pacote e versão do app, identificador por instalação, métricas de desempenho e latência, características técnicas como formato, resolução e tamanhos de entrada/saída, e códigos de erro. Esses dados são tratados pelo Google de acordo com suas políticas.</p>
+<p>Quando você toca em <strong>Adicionar ao WhatsApp</strong>, os arquivos do pacote escolhido são disponibilizados ao WhatsApp ou WhatsApp Business no aparelho para concluir a ação solicitada por você. Isso só acontece após sua ação explícita. Reelora e Alleryon Labs não são afiliados, patrocinados ou endossados pelo WhatsApp ou pela Meta.</p>
+</section>
+<section><h2>11. Login opcional no Instagram</h2>
 <p>Alguns conteúdos do Instagram podem exigir sua própria sessão. Se você optar por conectar:</p>
 <ul>
 <li>o login ocorre na página do Instagram dentro do app; o Reelora não lê nem armazena sua senha;</li>
@@ -100,7 +113,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li>o uso do Instagram continua sujeito às regras e à política da Meta. O Reelora não é afiliado ao Instagram nem endossado por ele.</li>
 </ul>
 </section>
-<section><h2>10. Publicidade: Google AdMob</h2>
+<section><h2>12. Publicidade: Google AdMob</h2>
 <p>O Reelora é gratuito e exibe anúncios do <strong>Google AdMob</strong>: um banner na tela principal e, no máximo, um anúncio em tela cheia por sessão do app, depois do primeiro download concluído.</p>
 <p>O SDK de anúncios do Google funciona dentro do app e se comunica diretamente com o Google. Segundo a documentação do Google, o SDK pode tratar automaticamente dados como endereço IP, interações com o app e anúncios, informações de diagnóstico e identificadores do aparelho, incluindo identificadores de publicidade quando disponíveis. Esses dados podem ser usados para publicidade, medição, prevenção de fraude e desempenho.</p>
 <p>O Google trata esses dados conforme suas próprias políticas. A Alleryon Labs pode acessar relatórios e informações disponibilizados pelo Google por meio do AdMob, conforme as configurações e funcionalidades do serviço. O Reelora não envia ao Google, para fins de publicidade, os links que você baixa, os arquivos baixados ou o histórico local.</p>
@@ -110,20 +123,20 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><a href="https://myadcenter.google.com/" rel="noopener">Minha Central de Anúncios</a></li>
 </ul>
 </section>
-<section><h2>11. Escolhas de privacidade e consentimento</h2>
+<section><h2>13. Escolhas de privacidade e consentimento</h2>
 <p>O Reelora integra a <strong>User Messaging Platform (UMP) do Google</strong> para apresentar, quando aplicável, escolhas de consentimento e privacidade relacionadas à publicidade. A disponibilidade e o conteúdo dessas opções podem variar conforme sua região e as configurações aplicáveis do Google.</p>
 <p>Quando exigido pela UMP, o Reelora disponibiliza <strong>Opções de privacidade</strong> em <strong>Preferências › Avançado</strong> para que as escolhas possam ser revistas.</p>
 </section>
-<section><h2>12. Finalidades do tratamento</h2>
+<section><h2>14. Finalidades do tratamento</h2>
 <p>O Reelora trata ou transmite informações apenas conforme necessário para executar as funções solicitadas, manter preferências e histórico locais, oferecer recursos opcionais e viabilizar publicidade e suas escolhas de privacidade. Dependendo da jurisdição, o tratamento pode se apoiar na solicitação do usuário, no consentimento, em obrigações legais ou em outras bases previstas pela legislação aplicável.</p>
 </section>
-<section><h2>13. Com quem as informações podem ser compartilhadas</h2>
-<p>Dependendo da função usada, destinatários podem incluir as plataformas e sites dos links, o serviço externo baseado em Cobalt, serviços de prévia e o Google para publicidade e consentimento. A Alleryon Labs não vende dados pessoais em troca de dinheiro.</p>
+<section><h2>15. Com quem as informações podem ser compartilhadas</h2>
+<p>Dependendo da função usada, destinatários podem incluir as plataformas e sites dos links, o serviço externo baseado em Cobalt, serviços de prévia e o Google para publicidade, consentimento e os dados técnicos/diagnósticos do ML Kit descritos nesta política. Quando você solicita adicionar um pacote de figurinhas ao WhatsApp ou WhatsApp Business, os arquivos correspondentes são disponibilizados ao aplicativo escolhido no aparelho para executar essa ação. A Alleryon Labs não vende dados pessoais em troca de dinheiro.</p>
 </section>
-<section><h2>14. Transferências internacionais</h2>
-<p>Os serviços com que o Reelora se comunica podem processar informações em países diferentes do seu, sujeitos a regras de proteção de dados diferentes. A Alleryon Labs não controla nem conhece a localização de toda a infraestrutura desses terceiros e não recebe os links ou arquivos em servidores próprios.</p>
+<section><h2>16. Transferências internacionais</h2>
+<p>Os serviços com que o Reelora se comunica, incluindo serviços do Google como AdMob, UMP e componentes do ML Kit/Google Play Services, podem processar informações em países diferentes do seu, sujeitos a regras de proteção de dados diferentes. A Alleryon Labs não controla nem conhece a localização de toda a infraestrutura desses terceiros e não recebe os links ou arquivos em servidores próprios.</p>
 </section>
-<section><h2>15. Retenção</h2>
+<section><h2>17. Retenção</h2>
 <ul>
 <li><strong>Histórico:</strong> até você apagar, limpar o histórico ou desinstalar o app; máximo de 500 itens, sem prazo automático.</li>
 <li><strong>Preferências, playlists e informações de áudio:</strong> até exclusão ou desinstalação.</li>
@@ -131,31 +144,31 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Cache e temporários:</strong> até serem removidos pelo app, pelo usuário ou pelo Android.</li>
 <li><strong>Arquivos baixados:</strong> até você excluí-los.</li>
 </ul>
-<p>Dados tratados por Google, plataformas de origem e serviços de prévia seguem as respectivas práticas e políticas. Para o serviço Cobalt externo atualmente utilizado, a Alleryon Labs não conhece o prazo de retenção do operador.</p>
+<p>Dados tratados pelo Google, inclusive por AdMob, UMP e componentes do ML Kit/Google Play Services, pelas plataformas de origem e pelos serviços de prévia seguem as respectivas práticas e políticas. Para o serviço Cobalt externo atualmente utilizado, a Alleryon Labs não conhece o prazo de retenção do operador.</p>
 </section>
-<section><h2>16. Segurança</h2>
+<section><h2>18. Segurança</h2>
 <p>As conexões integradas pelo Reelora usam HTTPS. Dados locais ficam na área privada do app quando aplicável. A versão de produção foi projetada para não registrar URLs completas, endereços de arquivos, identificadores de conta ou dados de sessão nos registros técnicos do aparelho. Nenhum sistema é totalmente imune a falhas.</p>
 </section>
-<section><h2>17. Backup e transferência do Android</h2>
+<section><h2>19. Backup e transferência do Android</h2>
 <p>A configuração atual exclui a sessão do Instagram e os dados de navegação associados das rotinas de backup/transferência configuradas pelo app. Dependendo da versão e das configurações do Android, outros dados locais elegíveis, como histórico, playlists e preferências, podem participar de mecanismos de transferência entre aparelhos.</p>
 </section>
-<section><h2>18. Seus direitos e escolhas</h2>
+<section><h2>20. Seus direitos e escolhas</h2>
 <p>No próprio app ou aparelho você pode limpar histórico e cache, desconectar o Instagram, rever opções de privacidade quando disponíveis, controlar permissões, excluir arquivos e desinstalar o Reelora.</p>
 <p>Dependendo da legislação aplicável à sua região, você também pode ter direitos relacionados a acesso, correção, exclusão, oposição, restrição, portabilidade, retirada de consentimento e reclamação perante autoridade competente.</p>
 <p>A Alleryon Labs não mantém conta Reelora nem um banco de dados próprio de usuários. Para dúvidas ou solicitações relacionadas ao Reelora, escreva para <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a>. Quando uma solicitação envolver dados controlados diretamente por um terceiro, poderemos indicar o serviço correspondente.</p>
 </section>
-<section><h2>19. Crianças</h2>
+<section><h2>21. Crianças</h2>
 <p>O Reelora é destinado a usuários com <strong>13 anos ou mais</strong> e não é direcionado especificamente a crianças. O aplicativo não solicita idade ou data de nascimento e não possui recursos criados especificamente para público infantil. Usuários menores de idade devem observar as regras aplicáveis em seu país e, quando necessário, utilizar o app com autorização de um responsável.</p>
 </section>
-<section><h2>20. Alterações nesta política</h2>
+<section><h2>22. Alterações nesta política</h2>
 <p>Esta política pode ser atualizada quando o Reelora ou os serviços utilizados mudarem. A versão vigente permanecerá nesta página com a data de última atualização. Como o Reelora não possui cadastro próprio, não enviamos avisos por e-mail a todos os usuários.</p>
 </section>
-<section><h2>21. Contato</h2>
+<section><h2>23. Contato</h2>
 <p><strong>Reelora</strong><br>Publicado sob o nome de desenvolvedor <strong>Alleryon Labs</strong><br>E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 </section>
 </div>
 <div id="en" hidden>
-<div class="hero"><h1>Reelora Privacy Policy</h1><p class="meta">Effective: September 28, 2026 · Last updated: September 28, 2026</p><p class="note">This policy describes Reelora's current operation and the third-party services used by the application.</p></div>
+<div class="hero"><h1>Reelora Privacy Policy</h1><p class="meta">Effective: September 28, 2026 · Last updated: October 2, 2026</p><p class="note">This policy describes Reelora's current operation and the third-party services used by the application.</p></div>
 <section><h2>1. Who we are</h2>
 <p>Reelora is an Android application published under the developer name <strong>Alleryon Labs</strong>. It lets you save videos, audio and images to your device from links you choose.</p>
 <p>This policy explains what information Reelora uses, where it is stored, when it leaves your device, and what choices you have.</p>
@@ -176,6 +189,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Links:</strong> the address of content you want to save, whether copied or shared with Reelora.</li>
 <li><strong>Optional Instagram login:</strong> performed on Instagram's page inside the app.</li>
 <li><strong>App choices:</strong> settings such as quality, language, theme, audio-only mode, playlists and track names.</li>
+<li><strong>Media you choose:</strong> photos, videos or audio selected for the library, editing, sticker creation or other media tools. Where applicable, Reelora uses Android system pickers so you can choose specific items.</li>
 </ul>
 </section>
 <section><h2>4. Clipboard and shared links</h2>
@@ -209,6 +223,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Instagram session:</strong> when enabled, it remains in the app's browsing component on your device.</li>
 <li><strong>Cache and temporary data:</strong> intermediate data used during downloads and edits.</li>
 <li><strong>Consent and advertising information:</strong> local information maintained by Google's libraries.</li>
+<li><strong>Sticker packs:</strong> prepared files may remain in Reelora's private app area so the pack can be used.</li>
 </ul>
 <p>These items are stored in Reelora's private app area and are removed when the app is uninstalled, except for files saved to Android's media library.</p>
 </section>
@@ -216,7 +231,18 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <p>Videos, audio and images are saved to Android's media library, including <code>Movies/Reelora</code>, <code>Music/Reelora</code> and <code>Pictures/Reelora</code>. File names may include the creator's public username as provided by the source platform.</p>
 <p>Downloaded files remain on the device after clearing history or uninstalling Reelora until you delete them. Reelora does not automatically upload those files to a server. When you use <strong>Share</strong>, Android displays available destinations and you choose where to send the file.</p>
 </section>
-<section><h2>9. Optional Instagram login</h2>
+<section><h2>9. Device library and editing tools</h2>
+<p>With your authorization or after you explicitly select media, Reelora may access videos already on your device to display them in the Library and allow playback, management and use in editing tools. Access depends on the permissions and options provided by your Android version, including limited access where available.</p>
+<p>Editing tools can trim videos, apply filters and adjustments, add music, create GIFs and extract audio. These operations are performed locally on the device. Results are saved as new files in Reelora media locations; using these tools by itself does not send the media to Alleryon Labs servers.</p>
+<p>When you choose audio from your device as background music, selection may be made through Android's content picker. Reelora accesses only the selected item to perform the edit you requested.</p>
+</section>
+<section><h2>10. Sticker creation and background removal</h2>
+<p>Reelora lets you create static or animated sticker packs from photos, videos, text and other elements you choose. Photos and videos may be selected through Android system media pickers. For this feature, Reelora does not need broad access to all photos stored on your device.</p>
+<p>Manual cropping, text, frames, outlines, emojis and sticker preparation are processed locally. Files prepared for sticker packs may remain in the app's private area and, under normal Android behavior, are removed when Reelora's app data is cleared or the app is uninstalled.</p>
+<p>The optional <strong>Remove background</strong> feature uses <strong>Google ML Kit Subject Segmentation</strong>. Image segmentation is performed on the device; the image used to create the sticker is not sent to Google to perform segmentation. Google ML Kit/Google Play Services components may, however, transmit technical and diagnostic data about operation of the service to Google, such as technical device and app information, app package and version, a per-installation identifier, performance and latency metrics, technical characteristics such as format, resolution and input/output sizes, and error codes. Google processes this data under its own policies.</p>
+<p>When you tap <strong>Add to WhatsApp</strong>, the selected sticker-pack files are made available to WhatsApp or WhatsApp Business on the device to complete the action you requested. This occurs only after your explicit action. Reelora and Alleryon Labs are not affiliated with, sponsored by, or endorsed by WhatsApp or Meta.</p>
+</section>
+<section><h2>11. Optional Instagram login</h2>
 <p>Some Instagram content may require your own session. If you choose to connect:</p>
 <ul>
 <li>login takes place on Instagram's page inside the app; Reelora does not read or store your password;</li>
@@ -226,7 +252,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li>Instagram use remains subject to Meta's rules and privacy policy. Reelora is not affiliated with or endorsed by Instagram.</li>
 </ul>
 </section>
-<section><h2>10. Advertising: Google AdMob</h2>
+<section><h2>12. Advertising: Google AdMob</h2>
 <p>Reelora is free and displays ads through <strong>Google AdMob</strong>: a banner on the main screen and no more than one full-screen ad per app session, after the first completed download.</p>
 <p>Google's advertising SDK runs inside the app and communicates directly with Google. According to Google's documentation, the SDK may automatically process information such as IP address, app and ad interactions, diagnostic information and device identifiers, including advertising identifiers when available. This information may be used for advertising, measurement, fraud prevention and performance.</p>
 <p>Google processes this information under its own policies. Alleryon Labs may access reports and information made available by Google through AdMob according to the service's settings and features. Reelora does not send your download links, downloaded files or local history to Google for advertising purposes.</p>
@@ -236,20 +262,20 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><a href="https://myadcenter.google.com/" rel="noopener">My Ad Center</a></li>
 </ul>
 </section>
-<section><h2>11. Privacy choices and consent</h2>
+<section><h2>13. Privacy choices and consent</h2>
 <p>Reelora integrates Google's <strong>User Messaging Platform (UMP)</strong> to present advertising-related consent and privacy choices when applicable. Availability and content may vary according to your region and Google's applicable settings.</p>
 <p>When required by UMP, Reelora provides <strong>Privacy options</strong> under <strong>Preferences › Advanced</strong> so choices can be reviewed.</p>
 </section>
-<section><h2>12. Purposes of processing</h2>
+<section><h2>14. Purposes of processing</h2>
 <p>Reelora processes or transmits information only as needed to perform requested features, maintain local preferences and history, provide optional features, and support advertising and privacy choices. Depending on the jurisdiction, processing may rely on your request, consent, legal obligations, or other grounds provided by applicable law.</p>
 </section>
-<section><h2>13. Who information may be shared with</h2>
-<p>Depending on the feature used, recipients may include source platforms and websites, the external Cobalt-based service, preview services, and Google for advertising and consent. Alleryon Labs does not sell personal information in exchange for money.</p>
+<section><h2>15. Who information may be shared with</h2>
+<p>Depending on the feature used, recipients may include source platforms and websites, the external Cobalt-based service, preview services, and Google for advertising, consent, and the ML Kit technical/diagnostic data described in this policy. When you request that a sticker pack be added to WhatsApp or WhatsApp Business, the corresponding files are made available to the selected app on your device to perform that action. Alleryon Labs does not sell personal information in exchange for money.</p>
 </section>
-<section><h2>14. International transfers</h2>
-<p>Services Reelora communicates with may process information in countries other than yours and under different data-protection rules. Alleryon Labs does not control or know the location of all third-party infrastructure and does not receive your links or files on its own servers.</p>
+<section><h2>16. International transfers</h2>
+<p>Services Reelora communicates with, including Google services such as AdMob, UMP and ML Kit/Google Play Services components, may process information in countries other than yours and under different data-protection rules. Alleryon Labs does not control or know the location of all third-party infrastructure and does not receive your links or files on its own servers.</p>
 </section>
-<section><h2>15. Retention</h2>
+<section><h2>17. Retention</h2>
 <ul>
 <li><strong>History:</strong> until you remove it, clear history or uninstall the app; up to 500 entries, with no automatic time-based expiration.</li>
 <li><strong>Preferences, playlists and audio information:</strong> until deletion or uninstall.</li>
@@ -257,32 +283,32 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Cache and temporary data:</strong> until removed by the app, you or Android.</li>
 <li><strong>Downloaded files:</strong> until you delete them.</li>
 </ul>
-<p>Information processed by Google, source platforms and preview services is subject to their respective practices and policies. For the external Cobalt service currently used, Alleryon Labs does not know the operator's retention period.</p>
+<p>Information processed by Google, including AdMob, UMP and ML Kit/Google Play Services components, source platforms and preview services is subject to their respective practices and policies. For the external Cobalt service currently used, Alleryon Labs does not know the operator's retention period.</p>
 </section>
-<section><h2>16. Security</h2>
+<section><h2>18. Security</h2>
 <p>Reelora's integrated network connections use HTTPS. Local information is stored in the app's private area where applicable. The production version is designed not to write full URLs, file addresses, account identifiers or session data to device technical logs. No system is completely immune from failure.</p>
 </section>
-<section><h2>17. Android backup and device transfer</h2>
+<section><h2>19. Android backup and device transfer</h2>
 <p>The current configuration excludes the Instagram session and associated browsing data from the app-configured backup/transfer mechanisms. Depending on the Android version and device settings, other eligible local information, such as history, playlists and preferences, may participate in device-to-device transfer mechanisms.</p>
 </section>
-<section><h2>18. Your rights and choices</h2>
+<section><h2>20. Your rights and choices</h2>
 <p>In the app or on your device, you can clear history and cache, disconnect Instagram, review privacy options when available, manage permissions, delete downloaded files and uninstall Reelora.</p>
 <p>Depending on the law applicable in your region, you may also have rights relating to access, correction, deletion, objection, restriction, portability, withdrawal of consent and complaints to a competent authority.</p>
 <p>Alleryon Labs does not maintain Reelora accounts or its own user database. For questions or requests related to Reelora, contact <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a>. When a request concerns information controlled directly by a third party, we may direct you to the relevant service.</p>
 </section>
-<section><h2>19. Children</h2>
+<section><h2>21. Children</h2>
 <p>Reelora is intended for users aged <strong>13 and older</strong> and is not specifically directed to children. The app does not ask for age or date of birth and does not provide features specifically designed for children. Minors should follow the rules applicable in their country and, where required, use the app with permission from a parent or guardian.</p>
 </section>
-<section><h2>20. Changes to this policy</h2>
+<section><h2>22. Changes to this policy</h2>
 <p>This policy may be updated when Reelora or the services it uses change. The current version will remain on this page with the latest update date. Because Reelora has no proprietary account registration, we do not send policy notices by email to all users.</p>
 </section>
-<section><h2>21. Contact</h2>
+<section><h2>23. Contact</h2>
 <p><strong>Reelora</strong><br>Published under the developer name <strong>Alleryon Labs</strong><br>Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 </section>
 </div>
 
 <div id="es" hidden>
-<div class="hero"><h1>Política de Privacidad de Reelora</h1><p class="meta">Vigencia: 28 de septiembre de 2026 · Última actualización: 28 de septiembre de 2026</p><p class="note">Esta política describe el funcionamiento actual de Reelora y los servicios de terceros utilizados por la aplicación.</p></div>
+<div class="hero"><h1>Política de Privacidad de Reelora</h1><p class="meta">Vigencia: 28 de septiembre de 2026 · Última actualización: 2 de octubre de 2026</p><p class="note">Esta política describe el funcionamiento actual de Reelora y los servicios de terceros utilizados por la aplicación.</p></div>
 
 <section><h2>1. Quiénes somos</h2>
 <p>Reelora es una aplicación para Android publicada bajo el nombre de desarrollador <strong>Alleryon Labs</strong>. Permite guardar en tu dispositivo videos, audios e imágenes a partir de enlaces que tú eliges.</p>
@@ -302,6 +328,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Enlaces:</strong> la dirección del contenido que deseas guardar, ya sea copiada o compartida con Reelora.</li>
 <li><strong>Inicio de sesión opcional en Instagram:</strong> se realiza en la página de Instagram dentro de la aplicación.</li>
 <li><strong>Opciones de la aplicación:</strong> preferencias como calidad, idioma, tema, modo “Solo audio”, listas de reproducción y nombres de pistas.</li>
+<li><strong>Contenido multimedia que eliges:</strong> fotos, videos o audios seleccionados para la biblioteca, la edición, la creación de stickers u otras herramientas. Cuando corresponde, Reelora utiliza los selectores del sistema Android para elegir elementos específicos.</li>
 </ul></section>
 
 <section><h2>4. Portapapeles y enlaces compartidos</h2>
@@ -334,6 +361,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><strong>Sesión de Instagram:</strong> cuando está activada, permanece en el componente de navegación de la aplicación en tu dispositivo.</li>
 <li><strong>Caché y datos temporales:</strong> información intermedia utilizada durante descargas y ediciones.</li>
 <li><strong>Consentimiento y publicidad:</strong> información local mantenida por las bibliotecas de Google.</li>
+<li><strong>Paquetes de stickers:</strong> los archivos preparados pueden permanecer en el área privada de Reelora para permitir el uso del paquete.</li>
 </ul>
 <p>Estos datos se almacenan en el área privada de Reelora y se eliminan al desinstalar la aplicación, excepto los archivos guardados en la biblioteca multimedia de Android.</p></section>
 
@@ -341,7 +369,18 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <p>Los videos, audios e imágenes se guardan en la biblioteca multimedia de Android, incluidas las carpetas <code>Movies/Reelora</code>, <code>Music/Reelora</code> y <code>Pictures/Reelora</code>. Los nombres de archivo pueden incluir el nombre de usuario público del creador proporcionado por la plataforma de origen.</p>
 <p>Los archivos descargados permanecen en el dispositivo después de borrar el historial o desinstalar Reelora hasta que tú los elimines. Reelora no carga automáticamente esos archivos a un servidor. Cuando utilizas <strong>Compartir</strong>, Android muestra los destinos disponibles y tú eliges dónde enviar el archivo.</p></section>
 
-<section><h2>9. Inicio de sesión opcional en Instagram</h2>
+<section><h2>9. Biblioteca del dispositivo y herramientas de edición</h2>
+<p>Con tu autorización o después de que selecciones contenido multimedia de forma explícita, Reelora puede acceder a videos existentes en el dispositivo para mostrarlos en la Biblioteca y permitir su reproducción, gestión y uso en las herramientas de edición. El acceso depende de los permisos y opciones disponibles en tu versión de Android, incluido el acceso limitado cuando esté disponible.</p>
+<p>Las herramientas de edición pueden recortar videos, aplicar filtros y ajustes, añadir música, crear GIF y extraer audio. Estas operaciones se realizan localmente en el dispositivo. Los resultados se guardan como archivos nuevos en las ubicaciones multimedia de Reelora; el uso de estas herramientas, por sí solo, no envía el contenido a servidores de Alleryon Labs.</p>
+<p>Cuando eliges un audio del dispositivo como música de fondo, la selección puede realizarse mediante el selector de contenido de Android. Reelora accede únicamente al elemento seleccionado para realizar la edición solicitada.</p>
+</section>
+<section><h2>10. Creación de stickers y eliminación de fondo</h2>
+<p>Reelora permite crear paquetes de stickers estáticos o animados a partir de fotos, videos, texto y otros elementos que elijas. Las fotos y videos pueden seleccionarse mediante los selectores multimedia del sistema Android. Para esta función, Reelora no necesita acceso amplio a todas las fotos almacenadas en el dispositivo.</p>
+<p>El recorte manual, texto, marcos, contornos, emojis y la preparación de los stickers se procesan localmente. Los archivos preparados para los paquetes pueden permanecer en el área privada de la aplicación y, según el funcionamiento normal de Android, se eliminan cuando se borran los datos de Reelora o se desinstala la aplicación.</p>
+<p>La función opcional <strong>Quitar fondo</strong> utiliza <strong>Google ML Kit Subject Segmentation</strong>. La segmentación de la imagen se realiza en el dispositivo; la imagen utilizada para crear el sticker no se envía a Google para realizar la segmentación. Sin embargo, componentes de Google ML Kit/Google Play Services pueden transmitir a Google datos técnicos y de diagnóstico relacionados con el funcionamiento del servicio, como información técnica del dispositivo y de la aplicación, paquete y versión de la app, un identificador por instalación, métricas de rendimiento y latencia, características técnicas como formato, resolución y tamaños de entrada/salida, y códigos de error. Google procesa estos datos conforme a sus propias políticas.</p>
+<p>Cuando tocas <strong>Añadir a WhatsApp</strong>, los archivos del paquete seleccionado se ponen a disposición de WhatsApp o WhatsApp Business en el dispositivo para completar la acción solicitada. Esto ocurre únicamente después de tu acción explícita. Reelora y Alleryon Labs no están afiliados, patrocinados ni respaldados por WhatsApp o Meta.</p>
+</section>
+<section><h2>11. Inicio de sesión opcional en Instagram</h2>
 <p>Algunos contenidos de Instagram pueden requerir tu propia sesión. Si decides conectarte:</p><ul>
 <li>el inicio de sesión se realiza en la página de Instagram dentro de la aplicación; Reelora no lee ni almacena tu contraseña;</li>
 <li>la sesión resultante permanece en tu dispositivo y se utiliza para solicitudes a Instagram y para mostrar tu nombre de usuario en Preferencias;</li>
@@ -350,7 +389,7 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li>el uso de Instagram continúa sujeto a las reglas y política de privacidad de Meta. Reelora no está afiliado ni respaldado por Instagram.</li>
 </ul></section>
 
-<section><h2>10. Publicidad: Google AdMob</h2>
+<section><h2>12. Publicidad: Google AdMob</h2>
 <p>Reelora es gratuito y muestra anuncios mediante <strong>Google AdMob</strong>: un banner en la pantalla principal y, como máximo, un anuncio a pantalla completa por sesión de la aplicación, después de la primera descarga completada.</p>
 <p>El SDK publicitario de Google funciona dentro de la aplicación y se comunica directamente con Google. Según la documentación de Google, el SDK puede procesar automáticamente información como la dirección IP, interacciones con la aplicación y los anuncios, información de diagnóstico e identificadores del dispositivo, incluidos identificadores publicitarios cuando estén disponibles. Esta información puede utilizarse para publicidad, medición, prevención del fraude y rendimiento.</p>
 <p>Google procesa esta información conforme a sus propias políticas. Alleryon Labs puede acceder a informes e información proporcionados por Google a través de AdMob según la configuración y las funciones del servicio. Reelora no envía a Google, con fines publicitarios, tus enlaces de descarga, archivos descargados ni historial local.</p>
@@ -358,46 +397,46 @@ a{color:var(--accent)} code{overflow-wrap:anywhere;background:var(--soft);paddin
 <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Cómo utiliza Google la información de aplicaciones y sitios asociados</a></li>
 <li><a href="https://myadcenter.google.com/" rel="noopener">Mi Centro de Anuncios</a></li></ul></section>
 
-<section><h2>11. Opciones de privacidad y consentimiento</h2>
+<section><h2>13. Opciones de privacidad y consentimiento</h2>
 <p>Reelora integra la <strong>User Messaging Platform (UMP) de Google</strong> para presentar opciones de consentimiento y privacidad relacionadas con la publicidad cuando corresponda. La disponibilidad y el contenido pueden variar según tu región y la configuración aplicable de Google.</p>
 <p>Cuando la UMP lo requiera, Reelora ofrece <strong>Opciones de privacidad</strong> en <strong>Preferencias › Avanzado</strong> para que puedas revisar tus elecciones.</p></section>
 
-<section><h2>12. Finalidades del tratamiento</h2>
+<section><h2>14. Finalidades del tratamiento</h2>
 <p>Reelora procesa o transmite información únicamente cuando es necesario para realizar las funciones solicitadas, mantener preferencias e historial locales, proporcionar funciones opcionales y permitir la publicidad y las opciones de privacidad. Dependiendo de la jurisdicción, el tratamiento puede basarse en tu solicitud, tu consentimiento, obligaciones legales u otras bases previstas por la legislación aplicable.</p></section>
 
-<section><h2>13. Con quién puede compartirse la información</h2>
-<p>Dependiendo de la función utilizada, los destinatarios pueden incluir las plataformas y sitios web de origen, el servicio externo basado en Cobalt, servicios de vista previa y Google para publicidad y consentimiento. Alleryon Labs no vende información personal a cambio de dinero.</p></section>
+<section><h2>15. Con quién puede compartirse la información</h2>
+<p>Dependiendo de la función utilizada, los destinatarios pueden incluir las plataformas y sitios web de origen, el servicio externo basado en Cobalt, servicios de vista previa y Google para publicidad, consentimiento y los datos técnicos/de diagnóstico de ML Kit descritos en esta política. Cuando solicitas añadir un paquete de stickers a WhatsApp o WhatsApp Business, los archivos correspondientes se ponen a disposición de la aplicación seleccionada en tu dispositivo para realizar esa acción. Alleryon Labs no vende información personal a cambio de dinero.</p></section>
 
-<section><h2>14. Transferencias internacionales</h2>
-<p>Los servicios con los que se comunica Reelora pueden procesar información en países distintos al tuyo y bajo normas de protección de datos diferentes. Alleryon Labs no controla ni conoce la ubicación de toda la infraestructura de terceros y no recibe tus enlaces o archivos en servidores propios.</p></section>
+<section><h2>16. Transferencias internacionales</h2>
+<p>Los servicios con los que se comunica Reelora, incluidos servicios de Google como AdMob, UMP y componentes de ML Kit/Google Play Services, pueden procesar información en países distintos al tuyo y bajo normas de protección de datos diferentes. Alleryon Labs no controla ni conoce la ubicación de toda la infraestructura de terceros y no recibe tus enlaces o archivos en servidores propios.</p></section>
 
-<section><h2>15. Conservación</h2><ul>
+<section><h2>17. Conservación</h2><ul>
 <li><strong>Historial:</strong> hasta que lo elimines, borres el historial o desinstales la aplicación; hasta 500 entradas, sin caducidad automática por tiempo.</li>
 <li><strong>Preferencias, listas de reproducción e información de audio:</strong> hasta su eliminación o desinstalación.</li>
 <li><strong>Sesión de Instagram:</strong> hasta desconectarla, que expire o desinstalar la aplicación.</li>
 <li><strong>Caché y datos temporales:</strong> hasta que sean eliminados por la aplicación, por ti o por Android.</li>
 <li><strong>Archivos descargados:</strong> hasta que tú los elimines.</li>
 </ul>
-<p>La información procesada por Google, las plataformas de origen y los servicios de vista previa está sujeta a sus respectivas prácticas y políticas. Para el servicio externo Cobalt utilizado actualmente, Alleryon Labs desconoce el período de conservación del operador.</p></section>
+<p>La información procesada por Google, incluidos AdMob, UMP y los componentes de ML Kit/Google Play Services, las plataformas de origen y los servicios de vista previa está sujeta a sus respectivas prácticas y políticas. Para el servicio externo Cobalt utilizado actualmente, Alleryon Labs desconoce el período de conservación del operador.</p></section>
 
-<section><h2>16. Seguridad</h2>
+<section><h2>18. Seguridad</h2>
 <p>Las conexiones de red integradas en Reelora utilizan HTTPS. La información local se almacena en el área privada de la aplicación cuando corresponde. La versión de producción está diseñada para no escribir URLs completas, direcciones de archivos, identificadores de cuenta ni datos de sesión en los registros técnicos del dispositivo. Ningún sistema es completamente inmune a fallos.</p></section>
 
-<section><h2>17. Copia de seguridad y transferencia de Android</h2>
+<section><h2>19. Copia de seguridad y transferencia de Android</h2>
 <p>La configuración actual excluye la sesión de Instagram y los datos de navegación asociados de los mecanismos de copia de seguridad/transferencia configurados por la aplicación. Dependiendo de la versión de Android y de la configuración del dispositivo, otros datos locales elegibles, como historial, listas de reproducción y preferencias, pueden participar en mecanismos de transferencia entre dispositivos.</p></section>
 
-<section><h2>18. Tus derechos y opciones</h2>
+<section><h2>20. Tus derechos y opciones</h2>
 <p>En la aplicación o en tu dispositivo puedes borrar el historial y la caché, desconectar Instagram, revisar las opciones de privacidad cuando estén disponibles, administrar permisos, eliminar archivos descargados y desinstalar Reelora.</p>
 <p>Dependiendo de la legislación aplicable en tu región, también puedes tener derechos relacionados con acceso, rectificación, eliminación, oposición, limitación, portabilidad, retirada del consentimiento y reclamaciones ante una autoridad competente.</p>
 <p>Alleryon Labs no mantiene cuentas Reelora ni una base de datos propia de usuarios. Para preguntas o solicitudes relacionadas con Reelora, escribe a <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a>. Cuando una solicitud se refiera a información controlada directamente por un tercero, podremos indicarte el servicio correspondiente.</p></section>
 
-<section><h2>19. Menores</h2>
+<section><h2>21. Menores</h2>
 <p>Reelora está destinado a usuarios de <strong>13 años o más</strong> y no está dirigido específicamente a niños. La aplicación no solicita edad ni fecha de nacimiento y no ofrece funciones diseñadas específicamente para niños. Los menores deben cumplir las normas aplicables en su país y, cuando sea necesario, utilizar la aplicación con autorización de un padre, madre o tutor.</p></section>
 
-<section><h2>20. Cambios en esta política</h2>
+<section><h2>22. Cambios en esta política</h2>
 <p>Esta política puede actualizarse cuando cambie Reelora o los servicios que utiliza. La versión vigente permanecerá en esta página con la fecha de última actualización. Como Reelora no dispone de registro propio de cuentas, no enviamos avisos de la política por correo electrónico a todos los usuarios.</p></section>
 
-<section><h2>21. Contacto</h2>
+<section><h2>23. Contacto</h2>
 <p><strong>Reelora</strong><br>Publicado bajo el nombre de desarrollador <strong>Alleryon Labs</strong><br>Correo electrónico: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p></section>
 </div>
 
