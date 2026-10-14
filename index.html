@@ -59,7 +59,7 @@ footer{color:var(--muted);text-align:center;padding:25px}
 
 <div class="hero">
 <h1>Política de Privacidade do Reelora</h1>
-<p class="meta">Vigência: 28 de setembro de 2026 · Última atualização: 8 de outubro de 2026</p>
+<p class="meta">Vigência: 28 de setembro de 2026 · Última atualização: 14 de outubro de 2026</p>
 <p class="note">Esta política descreve o funcionamento atual do Reelora e os serviços de terceiros usados pelo aplicativo.</p>
 </div>
 
@@ -75,7 +75,7 @@ footer{color:var(--muted);text-align:center;padding:25px}
 <ul>
 <li>O Reelora não tem conta, cadastro nem login próprio. Não pedimos nome, e-mail ou telefone.</li>
 <li>A Alleryon Labs não opera servidores que recebam seus links ou arquivos. O app se comunica diretamente com os serviços necessários para cumprir o seu pedido.</li>
-<li>Quando você pede um download, o link pode ser enviado à plataforma de origem e, em vários casos, a um serviço externo de processamento de mídia baseado em Cobalt.</li>
+<li>Quando você pede um download, o app se comunica com a plataforma de origem e, em alguns casos, envia o link a serviços externos: o serviço de processamento de mídia baseado em Cobalt e, para links do X, o FxTwitter.</li>
 <li>O histórico, as preferências e os arquivos salvos ficam no seu aparelho.</li>
 <li>A versão gratuita do Reelora exibe anúncios do Google AdMob. Usuários com uma assinatura Premium ativa utilizam o aplicativo sem esses anúncios.</li>
 <li>O Reelora Premium é uma assinatura opcional processada pelo Google Play. A Alleryon Labs não recebe nem armazena dados de cartão.</li>
@@ -104,7 +104,9 @@ footer{color:var(--muted);text-align:center;padding:25px}
 <p>Para cumprir o seu pedido, o Reelora precisa localizar o arquivo do conteúdo e baixá-lo. Dependendo do link e da função escolhida, o app pode se comunicar com:</p>
 <ul>
 <li><strong>A plataforma ou o site do link:</strong> por exemplo TikTok, Instagram, Kwai, YouTube, Facebook, X, Pinterest e Reddit. Os serviços contatados dependem do link fornecido. O Reelora não é afiliado a essas plataformas nem endossado por elas.</li>
-<li><strong>Serviços de prévia:</strong> a própria página do link, recursos de incorporação, miniaturas do YouTube em <code>i.ytimg.com</code> e, para links do X, o serviço de terceiros FxTwitter.</li>
+<li><strong>Download direto pelo aparelho:</strong> em vários casos o próprio aparelho localiza e baixa a mídia diretamente dos servidores da plataforma, sem intermediários: vídeos e áudios do Instagram, do Kwai e do TikTok; o áudio do X, do Facebook, do Pinterest e de vídeos nativos do Reddit; e vídeos nativos do Reddit quando a qualidade original está disponível publicamente. Para isso, o app pode carregar a página pública do conteúdo — em alguns casos dentro do componente de navegação do app, como no Instagram, no TikTok e no modo “Só áudio” do Facebook — ou consultar o feed RSS público do post do Reddit.</li>
+<li><strong>Serviços de prévia:</strong> a própria página do link, recursos de incorporação e miniaturas do YouTube em <code>i.ytimg.com</code>.</li>
+<li><strong>FxTwitter:</strong> para links do X, o Reelora consulta o serviço de terceiros FxTwitter (<code>api.fxtwitter.com</code>), que recebe o identificador do post, para obter a prévia e, no modo “Só áudio”, o endereço da faixa de áudio. O áudio é então baixado diretamente dos servidores do X.</li>
 <li><strong>O serviço externo de processamento de mídia</strong> descrito na seção 6.</li>
 </ul>
 <p>Nessas comunicações, o serviço contatado recebe o link ou o identificador do conteúdo. Como em qualquer conexão à internet, ele também pode observar o endereço IP do aparelho e informações técnicas da conexão. O Reelora não envia a esses serviços seu nome, e-mail ou histórico. A sessão opcional do Instagram é usada somente nas comunicações com o Instagram.</p>
@@ -112,11 +114,11 @@ footer{color:var(--muted);text-align:center;padding:25px}
 
 <section>
 <h2>6. Serviço externo de processamento de mídia (Cobalt)</h2>
-<p>Para vários tipos de link, o Reelora usa um serviço externo de resolução de mídia baseado no software de código aberto <strong>Cobalt</strong>. Atualmente isso inclui YouTube Shorts, Facebook, X, Pinterest, Reddit e outros sites, o modo “Só áudio” do TikTok e, como alternativa, downloads do TikTok. O endereço atualmente utilizado é <code>api.cobalt.liubquanti.click</code>.</p>
+<p>Para alguns tipos de link, o Reelora usa um serviço externo de resolução de mídia baseado no software de código aberto <strong>Cobalt</strong>. Atualmente isso inclui: vídeos e áudios do YouTube; vídeos do Facebook, do X e do Pinterest; vídeos do Reddit quando a qualidade original não está disponível publicamente e posts do Reddit que apontam para outros sites; e outros sites suportados. Ele também é usado como alternativa quando o processamento direto pelo aparelho não funciona — por exemplo, no TikTok e no modo “Só áudio” do X, do Facebook, do Pinterest e do Reddit. O endereço atualmente utilizado é <code>api.cobalt.liubquanti.click</code>.</p>
 <ul>
 <li>Esse serviço é operado por terceiro, não pela Alleryon Labs. Não temos contrato com o operador e não conseguimos confirmar quem ele é, onde opera, se mantém registros ou por quanto tempo guarda informações.</li>
 <li>Ele recebe o link do conteúdo e opções do download, além do endereço IP e de dados técnicos inerentes à conexão.</li>
-<li>Para gerar o resultado, pode acessar a plataforma de origem e processar a mídia. Em alguns casos, o próprio arquivo pode ser transmitido por esse serviço até o aparelho, por exemplo durante conversão de áudio.</li>
+<li>Para gerar o resultado, pode acessar a plataforma de origem e processar a mídia. Em alguns casos ele apenas indica o endereço do arquivo, que o aparelho baixa diretamente da plataforma; em outros, o próprio arquivo é transmitido por esse serviço até o aparelho — por exemplo, no YouTube, quando vídeo e áudio precisam ser juntados ou durante conversão de áudio. O serviço pode encaminhar o pedido a outros servidores compatíveis, que então entregam o resultado.</li>
 <li>Não identificamos uma política de privacidade publicada pelo operador. Evite usar esses recursos com links cujo compartilhamento com terceiros você não deseja.</li>
 </ul>
 <p>Existe uma opção avançada, oculta, para indicar outro endereço de serviço compatível. Se utilizada, os links passam a ser enviados ao serviço escolhido pelo usuário. Instagram e Kwai são processados diretamente pelo app, sem esse serviço.</p>
@@ -130,7 +132,8 @@ footer{color:var(--muted);text-align:center;padding:25px}
 <li><strong>Preferências:</strong> configurações do app e, se o Instagram estiver conectado, o nome de usuário exibido nas Preferências.</li>
 <li><strong>Sessão do Instagram:</strong> quando ativada, permanece no componente de navegação do app no aparelho.</li>
 <li><strong>Cache e temporários:</strong> dados intermediários usados durante downloads e edições.</li>
-<li><strong>Consentimento e anúncios:</strong> informações locais mantidas pelas bibliotecas do Google.</li>
+<li><strong>Consentimento e anúncios:</strong> informações locais mantidas pelas bibliotecas do Google e, na versão gratuita, uma contagem local dos downloads concluídos, usada somente para definir quando um anúncio em tela cheia pode aparecer.</li>
+<li><strong>Dados de navegação:</strong> páginas carregadas no componente de navegação do app (Instagram, TikTok e Facebook) podem guardar cookies e dados semelhantes no aparelho. Veja o documento “Cookies e tecnologias semelhantes”.</li>
 <li><strong>Reelora Premium:</strong> o aplicativo pode manter localmente informações técnicas necessárias para registrar o estado verificado da assinatura e apresentar corretamente os recursos Premium.</li>
 <li><strong>Pacotes de figurinhas:</strong> arquivos preparados podem permanecer na área privada do Reelora para permitir o uso do pacote.</li>
 </ul>
@@ -172,7 +175,7 @@ footer{color:var(--muted);text-align:center;padding:25px}
 
 <section>
 <h2>12. Publicidade: Google AdMob</h2>
-<p>A versão gratuita do Reelora exibe anúncios do <strong>Google AdMob</strong>: um banner na tela principal e, no máximo, um anúncio em tela cheia por sessão do app, depois do primeiro download concluído. Usuários com uma assinatura Reelora Premium ativa utilizam o aplicativo sem esses anúncios.</p>
+<p>A versão gratuita do Reelora exibe anúncios do <strong>Google AdMob</strong>: um banner na tela principal e anúncios em tela cheia em momentos limitados — depois do primeiro download concluído de cada sessão do app e, além disso, a cada cinco downloads concluídos, contados no aparelho. Nenhum anúncio em tela cheia é exibido ao abrir o app, entre os itens de um download em lote ou logo após outro anúncio. Usuários com uma assinatura Reelora Premium ativa utilizam o aplicativo sem esses anúncios.</p>
 <p>O SDK de anúncios do Google funciona dentro do app e se comunica diretamente com o Google. Segundo a documentação do Google, o SDK pode tratar automaticamente dados como endereço IP, interações com o app e anúncios, informações de diagnóstico e identificadores do aparelho, incluindo identificadores de publicidade quando disponíveis. Esses dados podem ser usados para publicidade, medição, prevenção de fraude e desempenho.</p>
 <p>O Google trata esses dados conforme suas próprias políticas. A Alleryon Labs pode acessar relatórios e informações disponibilizados pelo Google por meio do AdMob, conforme as configurações e funcionalidades do serviço. O Reelora não envia ao Google, para fins de publicidade, os links que você baixa, os arquivos baixados ou o histórico local.</p>
 <ul>
@@ -203,7 +206,7 @@ footer{color:var(--muted);text-align:center;padding:25px}
 
 <section>
 <h2>16. Com quem as informações podem ser compartilhadas</h2>
-<p>Dependendo da função usada, destinatários podem incluir as plataformas e sites dos links, o serviço externo baseado em Cobalt, serviços de prévia e o Google para publicidade, consentimento, processamento relacionado ao Google Play e os dados técnicos/diagnósticos do ML Kit descritos nesta política. Quando você solicita adicionar um pacote de figurinhas ao WhatsApp ou WhatsApp Business, os arquivos correspondentes são disponibilizados ao aplicativo escolhido no aparelho para executar essa ação. A Alleryon Labs não vende dados pessoais em troca de dinheiro.</p>
+<p>Dependendo da função usada, destinatários podem incluir as plataformas e sites dos links, o serviço externo baseado em Cobalt e os servidores compatíveis para os quais ele encaminha pedidos, o FxTwitter, serviços de prévia e o Google para publicidade, consentimento, processamento relacionado ao Google Play e os dados técnicos/diagnósticos do ML Kit descritos nesta política. Quando você solicita adicionar um pacote de figurinhas ao WhatsApp ou WhatsApp Business, os arquivos correspondentes são disponibilizados ao aplicativo escolhido no aparelho para executar essa ação. A Alleryon Labs não vende dados pessoais em troca de dinheiro.</p>
 </section>
 
 <section>
@@ -221,7 +224,7 @@ footer{color:var(--muted);text-align:center;padding:25px}
 <li><strong>Cache e temporários:</strong> até serem removidos pelo app, pelo usuário ou pelo Android.</li>
 <li><strong>Arquivos baixados:</strong> até você excluí-los.</li>
 </ul>
-<p>Dados tratados pelo Google, inclusive por Google Play, AdMob, UMP e componentes do ML Kit/Google Play Services, pelas plataformas de origem e pelos serviços de prévia seguem as respectivas práticas e políticas. Para o serviço Cobalt externo atualmente utilizado, a Alleryon Labs não conhece o prazo de retenção do operador.</p>
+<p>Dados tratados pelo Google, inclusive por Google Play, AdMob, UMP e componentes do ML Kit/Google Play Services, pelas plataformas de origem e pelos serviços de prévia seguem as respectivas práticas e políticas. Para o serviço Cobalt externo atualmente utilizado e para o FxTwitter, a Alleryon Labs não conhece o prazo de retenção dos operadores.</p>
 </section>
 
 <section>
@@ -248,7 +251,7 @@ footer{color:var(--muted);text-align:center;padding:25px}
 
 <section>
 <h2>23. Alterações nesta política</h2>
-<p>Esta política pode ser atualizada quando o Reelora ou os serviços utilizados mudarem. A versão vigente permanecerá nesta página com a data de última atualização. Como o Reelora não possui cadastro próprio, não enviamos avisos por e-mail a todos os usuários.</p>
+<p>Esta política pode ser atualizada quando o Reelora ou os serviços utilizados mudarem. A versão vigente fica disponível nesta página e no próprio aplicativo (Preferências › Legal), com a data de última atualização. Como o Reelora não possui cadastro próprio, não enviamos avisos por e-mail a todos os usuários.</p>
 </section>
 
 <section>
@@ -268,7 +271,7 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <div class="hero">
 <h1>Reelora Privacy Policy</h1>
-<p class="meta">Effective: September 28, 2026 · Last updated: October 8, 2026</p>
+<p class="meta">Effective: September 28, 2026 · Last updated: October 14, 2026</p>
 <p class="note">This policy describes Reelora's current operation and the third-party services used by the application.</p>
 </div>
 
@@ -284,7 +287,7 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <ul>
 <li>Reelora has no proprietary account or registration system and does not ask for your name, email address or phone number.</li>
 <li>Alleryon Labs does not operate servers that receive your links or downloaded files. The app communicates directly with services needed to perform your request.</li>
-<li>When you request a download, the link may be sent to the source platform and, in several cases, to an external Cobalt-based media processing service.</li>
+<li>When you request a download, the app communicates with the source platform and, in some cases, sends the link to external services: the Cobalt-based media processing service and, for X links, FxTwitter.</li>
 <li>History, preferences and saved files are stored on your device.</li>
 <li>The free version of Reelora displays ads through Google AdMob. Users with an active Premium subscription use the app without those ads.</li>
 <li>Reelora Premium is an optional subscription processed through Google Play. Alleryon Labs does not receive or store payment-card details.</li>
@@ -313,7 +316,9 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <p>To perform your request, Reelora needs to locate the media file and download it. Depending on the link and feature selected, the app may communicate with:</p>
 <ul>
 <li><strong>The source platform or website:</strong> for example TikTok, Instagram, Kwai, YouTube, Facebook, X, Pinterest and Reddit. Reelora is not affiliated with or endorsed by these platforms.</li>
-<li><strong>Preview services:</strong> the source page itself, embedding services, YouTube thumbnails at <code>i.ytimg.com</code>, and the third-party FxTwitter service for X links.</li>
+<li><strong>Direct download by your device:</strong> in many cases your device itself locates and downloads the media directly from the platform's servers, with no intermediary: Instagram, Kwai and TikTok videos and audio; X, Facebook, Pinterest and native Reddit audio; and native Reddit videos when the original quality is publicly available. To do so, the app may load the content's public page — in some cases inside the app's browsing component, as with Instagram, TikTok and Facebook's audio-only mode — or read the public RSS feed of the Reddit post.</li>
+<li><strong>Preview services:</strong> the source page itself, embedding services and YouTube thumbnails at <code>i.ytimg.com</code>.</li>
+<li><strong>FxTwitter:</strong> for X links, Reelora queries the third-party FxTwitter service (<code>api.fxtwitter.com</code>), which receives the post identifier, to obtain the preview and, in audio-only mode, the address of the audio track. The audio is then downloaded directly from X's servers.</li>
 <li><strong>The external media processing service</strong> described in section 6.</li>
 </ul>
 <p>The contacted service receives the link or content identifier. As with any Internet connection, it may also observe your device's IP address and technical connection information. Reelora does not send these services your name, email address or local history. Your optional Instagram session is used only in communications with Instagram.</p>
@@ -321,11 +326,11 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>6. External media processing service (Cobalt)</h2>
-<p>For several types of links, Reelora uses an external media resolution service based on the open-source <strong>Cobalt</strong> software. This currently includes YouTube Shorts, Facebook, X, Pinterest, Reddit and other sites, TikTok audio-only mode, and TikTok fallback downloads. The service currently used is <code>api.cobalt.liubquanti.click</code>.</p>
+<p>For some types of links, Reelora uses an external media resolution service based on the open-source <strong>Cobalt</strong> software. This currently includes: YouTube videos and audio; Facebook, X and Pinterest videos; Reddit videos when the original quality is not publicly available, and Reddit posts that link to other sites; and other supported sites. It is also used as a fallback when direct processing by the device does not work — for example, for TikTok and for the audio-only mode of X, Facebook, Pinterest and Reddit. The service currently used is <code>api.cobalt.liubquanti.click</code>.</p>
 <ul>
 <li>This service is operated by a third party, not by Alleryon Labs. We have no contract with its operator and cannot confirm who operates it, where it operates, whether it keeps logs, or how long information is retained.</li>
 <li>It receives the content link and download options, as well as the IP address and technical information inherent to the connection.</li>
-<li>To produce the requested result, it may contact the source platform and process the media. In some cases, the media file itself may be transmitted through this service to your device, such as during audio conversion.</li>
+<li>To produce the requested result, it may contact the source platform and process the media. In some cases it only provides the file's address, which your device downloads directly from the platform; in others, the media file itself is transmitted through this service to your device — for example, for YouTube, when video and audio need to be combined, or during audio conversion. The service may forward the request to other compatible servers, which then deliver the result.</li>
 <li>We have not identified a privacy policy published by the operator. Avoid using these features with links you do not want to share with a third party.</li>
 </ul>
 <p>An advanced hidden option can point Reelora to another compatible service address. If used, links are sent to the service selected by the user. Instagram and Kwai are processed directly by the app without this service.</p>
@@ -339,7 +344,8 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <li><strong>Preferences:</strong> app settings and, if Instagram is connected, the username shown in Preferences.</li>
 <li><strong>Instagram session:</strong> when enabled, it remains in the app's browsing component on your device.</li>
 <li><strong>Cache and temporary data:</strong> intermediate data used during downloads and edits.</li>
-<li><strong>Consent and advertising information:</strong> local information maintained by Google's libraries.</li>
+<li><strong>Consent and advertising information:</strong> local information maintained by Google's libraries and, in the free version, a local count of completed downloads, used only to determine when a full-screen ad may appear.</li>
+<li><strong>Browsing data:</strong> pages loaded in the app's browsing component (Instagram, TikTok and Facebook) may store cookies and similar data on your device. See the “Cookies and similar technologies” document.</li>
 <li><strong>Reelora Premium:</strong> the app may locally retain technical information needed to record the verified subscription state and correctly provide Premium features.</li>
 <li><strong>Sticker packs:</strong> prepared files may remain in Reelora's private app area so the pack can be used.</li>
 </ul>
@@ -381,7 +387,7 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>12. Advertising: Google AdMob</h2>
-<p>The free version of Reelora displays ads through <strong>Google AdMob</strong>: a banner on the main screen and no more than one full-screen ad per app session, after the first completed download. Users with an active Reelora Premium subscription use the app without those ads.</p>
+<p>The free version of Reelora displays ads through <strong>Google AdMob</strong>: a banner on the main screen and full-screen ads at limited moments — after the first completed download of each app session and, in addition, every five completed downloads, counted on your device. No full-screen ad is shown when the app opens, between the items of a batch download, or right after another ad. Users with an active Reelora Premium subscription use the app without those ads.</p>
 <p>Google's advertising SDK runs inside the app and communicates directly with Google. According to Google's documentation, the SDK may automatically process information such as IP address, app and ad interactions, diagnostic information and device identifiers, including advertising identifiers when available. This information may be used for advertising, measurement, fraud prevention and performance.</p>
 <p>Google processes this information under its own policies. Alleryon Labs may access reports and information made available by Google through AdMob according to the service's settings and features. Reelora does not send your download links, downloaded files or local history to Google for advertising purposes.</p>
 <ul>
@@ -412,7 +418,7 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>16. Who information may be shared with</h2>
-<p>Depending on the feature used, recipients may include source platforms and websites, the external Cobalt-based service, preview services, and Google for advertising, consent, Google Play-related processing, and the ML Kit technical/diagnostic data described in this policy. When you request that a sticker pack be added to WhatsApp or WhatsApp Business, the corresponding files are made available to the selected app on the device to perform that action. Alleryon Labs does not sell personal information in exchange for money.</p>
+<p>Depending on the feature used, recipients may include source platforms and websites, the external Cobalt-based service and the compatible servers to which it forwards requests, FxTwitter, preview services, and Google for advertising, consent, Google Play-related processing, and the ML Kit technical/diagnostic data described in this policy. When you request that a sticker pack be added to WhatsApp or WhatsApp Business, the corresponding files are made available to the selected app on the device to perform that action. Alleryon Labs does not sell personal information in exchange for money.</p>
 </section>
 
 <section>
@@ -430,7 +436,7 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <li><strong>Cache and temporary data:</strong> until removed by the app, you or Android.</li>
 <li><strong>Downloaded files:</strong> until you delete them.</li>
 </ul>
-<p>Information processed by Google, including Google Play, AdMob, UMP and ML Kit/Google Play Services components, source platforms and preview services is subject to their respective practices and policies. For the external Cobalt service currently used, Alleryon Labs does not know the operator's retention period.</p>
+<p>Information processed by Google, including Google Play, AdMob, UMP and ML Kit/Google Play Services components, source platforms and preview services is subject to their respective practices and policies. For the external Cobalt service currently used and for FxTwitter, Alleryon Labs does not know the operators' retention periods.</p>
 </section>
 
 <section>
@@ -457,7 +463,7 @@ E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>23. Changes to this policy</h2>
-<p>This policy may be updated when Reelora or the services it uses change. The current version will remain on this page with the latest update date. Because Reelora has no proprietary account registration, we do not send policy notices by email to all users.</p>
+<p>This policy may be updated when Reelora or the services it uses change. The current version is available on this page and in the app itself (Preferences › Legal), with the latest update date. Because Reelora has no proprietary account registration, we do not send policy notices by email to all users.</p>
 </section>
 
 <section>
@@ -477,7 +483,7 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <div class="hero">
 <h1>Política de Privacidad de Reelora</h1>
-<p class="meta">Vigencia: 28 de septiembre de 2026 · Última actualización: 8 de octubre de 2026</p>
+<p class="meta">Vigencia: 28 de septiembre de 2026 · Última actualización: 14 de octubre de 2026</p>
 <p class="note">Esta política describe el funcionamiento actual de Reelora y los servicios de terceros utilizados por la aplicación.</p>
 </div>
 
@@ -493,7 +499,7 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <ul>
 <li>Reelora no tiene un sistema propio de cuentas o registro y no solicita tu nombre, correo electrónico ni número de teléfono.</li>
 <li>Alleryon Labs no opera servidores que reciban tus enlaces o archivos descargados. La aplicación se comunica directamente con los servicios necesarios para realizar tu solicitud.</li>
-<li>Cuando solicitas una descarga, el enlace puede enviarse a la plataforma de origen y, en varios casos, a un servicio externo de procesamiento multimedia basado en Cobalt.</li>
+<li>Cuando solicitas una descarga, la aplicación se comunica con la plataforma de origen y, en algunos casos, envía el enlace a servicios externos: el servicio de procesamiento multimedia basado en Cobalt y, para enlaces de X, FxTwitter.</li>
 <li>El historial, las preferencias y los archivos guardados se almacenan en tu dispositivo.</li>
 <li>La versión gratuita de Reelora muestra anuncios mediante Google AdMob. Los usuarios con una suscripción Premium activa utilizan la aplicación sin esos anuncios.</li>
 <li>Reelora Premium es una suscripción opcional procesada mediante Google Play. Alleryon Labs no recibe ni almacena datos de tarjetas de pago.</li>
@@ -522,7 +528,9 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <p>Para realizar tu solicitud, Reelora necesita localizar el archivo multimedia y descargarlo. Dependiendo del enlace y de la función seleccionada, la aplicación puede comunicarse con:</p>
 <ul>
 <li><strong>La plataforma o sitio web de origen:</strong> por ejemplo, TikTok, Instagram, Kwai, YouTube, Facebook, X, Pinterest y Reddit. Reelora no está afiliado ni respaldado por estas plataformas.</li>
-<li><strong>Servicios de vista previa:</strong> la propia página de origen, servicios de incrustación, miniaturas de YouTube en <code>i.ytimg.com</code> y el servicio de terceros FxTwitter para enlaces de X.</li>
+<li><strong>Descarga directa desde tu dispositivo:</strong> en muchos casos el propio dispositivo localiza y descarga el contenido directamente de los servidores de la plataforma, sin intermediarios: vídeos y audios de Instagram, Kwai y TikTok; el audio de X, Facebook, Pinterest y de vídeos nativos de Reddit; y los vídeos nativos de Reddit cuando la calidad original está disponible públicamente. Para ello, la aplicación puede cargar la página pública del contenido —en algunos casos dentro del componente de navegación de la aplicación, como en Instagram, TikTok y el modo “Solo audio” de Facebook— o consultar el feed RSS público de la publicación de Reddit.</li>
+<li><strong>Servicios de vista previa:</strong> la propia página de origen, servicios de incrustación y miniaturas de YouTube en <code>i.ytimg.com</code>.</li>
+<li><strong>FxTwitter:</strong> para enlaces de X, Reelora consulta el servicio de terceros FxTwitter (<code>api.fxtwitter.com</code>), que recibe el identificador de la publicación, para obtener la vista previa y, en el modo “Solo audio”, la dirección de la pista de audio. El audio se descarga después directamente de los servidores de X.</li>
 <li><strong>El servicio externo de procesamiento multimedia</strong> descrito en la sección 6.</li>
 </ul>
 <p>El servicio contactado recibe el enlace o identificador del contenido. Como ocurre con cualquier conexión a Internet, también puede observar la dirección IP de tu dispositivo e información técnica de la conexión. Reelora no envía a estos servicios tu nombre, correo electrónico ni historial local. Tu sesión opcional de Instagram se utiliza únicamente en comunicaciones con Instagram.</p>
@@ -530,11 +538,11 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>6. Servicio externo de procesamiento multimedia (Cobalt)</h2>
-<p>Para varios tipos de enlaces, Reelora utiliza un servicio externo de resolución multimedia basado en el software de código abierto <strong>Cobalt</strong>. Actualmente incluye YouTube Shorts, Facebook, X, Pinterest, Reddit y otros sitios, el modo “Solo audio” de TikTok y descargas alternativas de TikTok. El servicio utilizado actualmente es <code>api.cobalt.liubquanti.click</code>.</p>
+<p>Para algunos tipos de enlaces, Reelora utiliza un servicio externo de resolución multimedia basado en el software de código abierto <strong>Cobalt</strong>. Actualmente incluye: vídeos y audios de YouTube; vídeos de Facebook, X y Pinterest; vídeos de Reddit cuando la calidad original no está disponible públicamente y publicaciones de Reddit que enlazan a otros sitios; y otros sitios compatibles. También se utiliza como alternativa cuando el procesamiento directo en el dispositivo no funciona, por ejemplo en TikTok y en el modo “Solo audio” de X, Facebook, Pinterest y Reddit. El servicio utilizado actualmente es <code>api.cobalt.liubquanti.click</code>.</p>
 <ul>
 <li>Este servicio es operado por un tercero, no por Alleryon Labs. No tenemos contrato con su operador y no podemos confirmar quién lo opera, dónde opera, si conserva registros ni durante cuánto tiempo conserva la información.</li>
 <li>Recibe el enlace del contenido y las opciones de descarga, además de la dirección IP y la información técnica inherente a la conexión.</li>
-<li>Para generar el resultado solicitado, puede contactar con la plataforma de origen y procesar el contenido multimedia. En algunos casos, el propio archivo multimedia puede transmitirse a través de este servicio hasta tu dispositivo, por ejemplo durante una conversión de audio.</li>
+<li>Para generar el resultado solicitado, puede contactar con la plataforma de origen y procesar el contenido multimedia. En algunos casos solo indica la dirección del archivo, que tu dispositivo descarga directamente de la plataforma; en otros, el propio archivo se transmite a través de este servicio hasta tu dispositivo, por ejemplo en YouTube, cuando hay que unir vídeo y audio o durante una conversión de audio. El servicio puede reenviar la solicitud a otros servidores compatibles, que entregan el resultado.</li>
 <li>No hemos identificado una política de privacidad publicada por el operador. Evita utilizar estas funciones con enlaces que no quieras compartir con un tercero.</li>
 </ul>
 <p>Existe una opción avanzada oculta que permite indicar otra dirección de servicio compatible. Si se utiliza, los enlaces se envían al servicio elegido por el usuario. Instagram y Kwai se procesan directamente en la aplicación sin este servicio.</p>
@@ -548,7 +556,8 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <li><strong>Preferencias:</strong> ajustes de la aplicación y, si Instagram está conectado, el nombre de usuario mostrado en Preferencias.</li>
 <li><strong>Sesión de Instagram:</strong> cuando está activada, permanece en el componente de navegación de la aplicación en tu dispositivo.</li>
 <li><strong>Caché y datos temporales:</strong> información intermedia utilizada durante descargas y ediciones.</li>
-<li><strong>Consentimiento y publicidad:</strong> información local mantenida por las bibliotecas de Google.</li>
+<li><strong>Consentimiento y publicidad:</strong> información local mantenida por las bibliotecas de Google y, en la versión gratuita, un recuento local de las descargas completadas, utilizado únicamente para determinar cuándo puede aparecer un anuncio a pantalla completa.</li>
+<li><strong>Datos de navegación:</strong> las páginas cargadas en el componente de navegación de la aplicación (Instagram, TikTok y Facebook) pueden guardar cookies y datos similares en el dispositivo. Consulta el documento “Cookies y tecnologías similares”.</li>
 <li><strong>Reelora Premium:</strong> la aplicación puede conservar localmente información técnica necesaria para registrar el estado verificado de la suscripción y ofrecer correctamente las funciones Premium.</li>
 <li><strong>Paquetes de stickers:</strong> los archivos preparados pueden permanecer en el área privada de Reelora para permitir el uso del paquete.</li>
 </ul>
@@ -590,7 +599,7 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>12. Publicidad: Google AdMob</h2>
-<p>La versión gratuita de Reelora muestra anuncios mediante <strong>Google AdMob</strong>: un banner en la pantalla principal y, como máximo, un anuncio a pantalla completa por sesión de la aplicación, después de la primera descarga completada. Los usuarios con una suscripción Reelora Premium activa utilizan la aplicación sin esos anuncios.</p>
+<p>La versión gratuita de Reelora muestra anuncios mediante <strong>Google AdMob</strong>: un banner en la pantalla principal y anuncios a pantalla completa en momentos limitados: después de la primera descarga completada de cada sesión de la aplicación y, además, cada cinco descargas completadas, contadas en el dispositivo. No se muestra ningún anuncio a pantalla completa al abrir la aplicación, entre los elementos de una descarga por lotes ni justo después de otro anuncio. Los usuarios con una suscripción Reelora Premium activa utilizan la aplicación sin esos anuncios.</p>
 <p>El SDK publicitario de Google funciona dentro de la aplicación y se comunica directamente con Google. Según la documentación de Google, el SDK puede procesar automáticamente información como la dirección IP, interacciones con la aplicación y los anuncios, información de diagnóstico e identificadores del dispositivo, incluidos identificadores publicitarios cuando estén disponibles. Esta información puede utilizarse para publicidad, medición, prevención del fraude y rendimiento.</p>
 <p>Google procesa esta información conforme a sus propias políticas. Alleryon Labs puede acceder a informes e información proporcionados por Google a través de AdMob según la configuración y las funciones del servicio. Reelora no envía a Google, con fines publicitarios, tus enlaces de descarga, archivos descargados ni historial local.</p>
 <ul>
@@ -621,7 +630,7 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>16. Con quién puede compartirse la información</h2>
-<p>Dependiendo de la función utilizada, los destinatarios pueden incluir las plataformas y sitios web de origen, el servicio externo basado en Cobalt, servicios de vista previa y Google para publicidad, consentimiento, procesamiento relacionado con Google Play y los datos técnicos/de diagnóstico de ML Kit descritos en esta política. Cuando solicitas añadir un paquete de stickers a WhatsApp o WhatsApp Business, los archivos correspondientes se ponen a disposición de la aplicación seleccionada en tu dispositivo para realizar esa acción. Alleryon Labs no vende información personal a cambio de dinero.</p>
+<p>Dependiendo de la función utilizada, los destinatarios pueden incluir las plataformas y sitios web de origen, el servicio externo basado en Cobalt y los servidores compatibles a los que reenvía solicitudes, FxTwitter, servicios de vista previa y Google para publicidad, consentimiento, procesamiento relacionado con Google Play y los datos técnicos/de diagnóstico de ML Kit descritos en esta política. Cuando solicitas añadir un paquete de stickers a WhatsApp o WhatsApp Business, los archivos correspondientes se ponen a disposición de la aplicación seleccionada en tu dispositivo para realizar esa acción. Alleryon Labs no vende información personal a cambio de dinero.</p>
 </section>
 
 <section>
@@ -639,7 +648,7 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 <li><strong>Caché y datos temporales:</strong> hasta que sean eliminados por la aplicación, por ti o por Android.</li>
 <li><strong>Archivos descargados:</strong> hasta que tú los elimines.</li>
 </ul>
-<p>La información procesada por Google, incluidos Google Play, AdMob, UMP y los componentes de ML Kit/Google Play Services, las plataformas de origen y los servicios de vista previa está sujeta a sus respectivas prácticas y políticas. Para el servicio externo Cobalt utilizado actualmente, Alleryon Labs desconoce el período de conservación del operador.</p>
+<p>La información procesada por Google, incluidos Google Play, AdMob, UMP y los componentes de ML Kit/Google Play Services, las plataformas de origen y los servicios de vista previa está sujeta a sus respectivas prácticas y políticas. Para el servicio externo Cobalt utilizado actualmente y para FxTwitter, Alleryon Labs desconoce los períodos de conservación de los operadores.</p>
 </section>
 
 <section>
@@ -666,7 +675,7 @@ Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
 
 <section>
 <h2>23. Cambios en esta política</h2>
-<p>Esta política puede actualizarse cuando cambie Reelora o los servicios que utiliza. La versión vigente permanecerá en esta página con la fecha de última actualización. Como Reelora no dispone de registro propio de cuentas, no enviamos avisos de la política por correo electrónico a todos los usuarios.</p>
+<p>Esta política puede actualizarse cuando cambie Reelora o los servicios que utiliza. La versión vigente está disponible en esta página y en la propia aplicación (Preferencias › Legal), con la fecha de última actualización. Como Reelora no dispone de registro propio de cuentas, no enviamos avisos de la política por correo electrónico a todos los usuarios.</p>
 </section>
 
 <section>
